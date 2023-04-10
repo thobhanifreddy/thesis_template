@@ -51,8 +51,20 @@
 \include{pages/cover.tex}
 \include{pages/title.tex}
 
-\tableofcontents
+\pagenumbering{roman} % Set page numbering to roman for the beginning
 
+\include{pages/chapters/abstract.tex}
+\include{pages/chapters/acknowledgements.tex}
+
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+\listoffigures
+
+
+
+
+\pagenumbering{arabic} % Switch back to arabic numbering for the first chapter
 
 \include{pages/chapters/introduction.tex}
 
