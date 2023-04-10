@@ -1,0 +1,60 @@
+\documentclass[12pt,oneside, openany]{book}
+
+
+\usepackage[paper = a4paper,
+	bindingoffset = 2mm,     %Offset for binding side of page
+	hmargin = 25mm,          %Left and right margin
+	vmargin = 25mm,          %Top and bottom margin
+	dvipdfm]
+	{geometry}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}	% Activate Type 1 fonts
+\usepackage{mathptmx}       % Use Times font, also for math
+\usepackage[scaled]{helvet} % for sans serif fonts (\textsf{...} or \sffamiliy)
+
+\usepackage{graphicx}       % Handles figures
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[mathcal]{euscript} % For calligraphy fonts
+\usepackage{booktabs}       % Publication quality tables
+\usepackage{setspace}       % Easy setting of line spacing
+
+\usepackage{hyperref} % makes table of contents clickable
+
+\hypersetup{hidelinks}
+
+\hypersetup{
+	colorlinks,      % Colored links
+	colorlinks,      % Colored links
+	citecolor=black,  % Color of cite links
+	linkcolor=black,  % Color of links
+	urlcolor=blue,   % Color of urls
+}
+
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage{csquotes}
+
+\addbibresource{refrences.bib}
+
+
+% Variables
+\newcommand{\thesisTitle}{Thesis Title}
+\newcommand{\thesisSubtitle}{Thesis Subtitle}
+\newcommand{\authorName}{Author Name}
+
+
+
+\begin{document}
+
+\include{pages/cover.tex}
+\include{pages/title.tex}
+
+\tableofcontents
+
+
+\include{pages/chapters/introduction.tex}
+
+\printbibliography
+\end{document}
