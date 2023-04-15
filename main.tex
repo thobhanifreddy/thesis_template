@@ -9,6 +9,8 @@
 	{geometry}
 
 \usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
 
 \usepackage[T1]{fontenc}	% Activate Type 1 fonts
 \usepackage{mathptmx}       % Use Times font, also for math
@@ -51,6 +53,9 @@
 \newcommand{\thesisTitle}{Thesis Title}
 \newcommand{\thesisSubtitle}{Thesis Subtitle}
 \newcommand{\authorName}{Author Name}
+\newcommand{\departmentName}{Program Name}
+\newcommand{\programName}{Author Name}
+\newcommand{\supervisorName}{Supervisor Name}
 
 
 
@@ -76,7 +81,7 @@
 \pagenumbering{arabic} % Switch back to arabic numbering for the first chapter
 \setlength{\parskip}{\baselineskip} % Set paragraph spacing to 1 line
 
-\include{pages/chapters/introduction.tex}
+\include{pages/chapters/introduction/introduction.tex}
 
 \printbibliography
 \end{document}
