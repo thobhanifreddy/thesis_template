@@ -61,13 +61,13 @@
 
 \begin{document}
 
-\include{pages/cover.tex}
-\include{pages/title.tex}
+\include{content/cover.tex}
+\include{content/title.tex}
 
 \pagenumbering{roman} % Set page numbering to roman for the beginning
 
-\include{pages/chapters/abstract.tex}
-\include{pages/chapters/acknowledgements.tex}
+\include{content/chapters/abstract.tex}
+\include{content/chapters/acknowledgements.tex}
 
 \tableofcontents
 \addtocontents{toc}{\protect\thispagestyle{empty}}
@@ -81,7 +81,7 @@
 \pagenumbering{arabic} % Switch back to arabic numbering for the first chapter
 \setlength{\parskip}{\baselineskip} % Set paragraph spacing to 1 line
 
-\include{pages/chapters/introduction/introduction.tex}
+\include{content/chapters/introduction/introduction.tex}
 
 \printbibliography
 \end{document}
